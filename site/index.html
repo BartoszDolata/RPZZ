@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>RPZZ Strykowo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <main>
         <header>
             <img src="../pictures/logo rpzz.svg" alt="logo">
-            <nav>
-                <a href="./index.html">
+            <nav class="navigation">
+                <a class="on" href="./index.html">
                     <div>
                         O NAS
                     </div>
@@ -42,12 +44,32 @@
         </header>
 
         <section>
+            <div id="wraper">
 
+            </div>
+            <article>
+                <h1>O nas</h1>
+                <p>Rolno-Przemysłowe Zakłady Zielarskie „STRYKOWO” Sp. z o.o. powstały 01.07.1999r. z przekształcenia
+                    Rolno-Przemysłowych Zakładów Zielarskich „HERBAPOL”.
+                    Wpisane do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego w Poznaniu
+                    XXI Wydział Gospodarczy pod numerem 0000089425.
+                    Siedziba Spółki mieści się w Strykowie przy ul. Parkowej 7, gmina Stęszew, województwo
+                    wielkopolskie.</p>
+            </article>
         </section>
         <footer>
-
+            <img src="../pictures/logo white.png" alt="logo">
+            <div>
+                <h3>Nawigacja</h3>
+                <p><a href="./index.html">Strona Główna</a></p>
+                <p><a href="./menagement.html">Zarząd</a></p>
+                <p><a href="./activity.html">Działalność</a></p>
+                <p><a href="./contact.html">Kontakt</a></p>
+                <p><a href="./advertisment.html">Ogłoszenia</a></p>
+            </div>
         </footer>
     </main>
+    <script src="../js/navbar.js"></script>
 </body>
 
 </html>
