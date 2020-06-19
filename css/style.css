@@ -1,9 +1,50 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: ;
 }
 
 body {
     min-width: 100%;
     min-height: 100%;
+}
+
+header {
+    display: flex;
+    height: 20vh;
+    width: 100vw;
+    border-bottom: 1px solid #d4d9db;
+}
+
+header img {
+    width: 20vw;
+    height: auto;
+}
+
+header nav {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+
+}
+
+header nav a div {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    padding: 5px;
+}
+
+header nav a div:hover {
+    color: #09A603;
 }
