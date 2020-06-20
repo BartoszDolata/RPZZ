@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>RPZZ Strykowo</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <main>
-        <header>
-            <img src="../pictures/logo rpzz.svg" alt="logo">
+        <header class="head">
+            <a href="./index.html"><img id="logo" src="../pictures/logo rpzz.svg" alt="logo"></a>
             <nav class="navigation">
                 <a class="on" href="./index.html">
                     <div>
@@ -41,24 +40,63 @@
                     </div>
                 </a>
             </nav>
+            <div class="burger">
+            </div>
         </header>
 
         <section>
-            <div id="wraper">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../pictures/jeczmien.jpg" alt="jeczmien">
+                    <div class="text">Uprawiamy pola w Gminie Stęszew</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../pictures/cows.jpg" alt="krowy">
+                    <div class="text">Jesteśmy producentem mleka</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../pictures/przenica.jpg" alt="przenica">
+                    <div class="text">Posiadamy duży areał</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
             </div>
-            <article>
-                <h1>O nas</h1>
-                <p>Rolno-Przemysłowe Zakłady Zielarskie „STRYKOWO” Sp. z o.o. powstały 01.07.1999r. z przekształcenia
-                    Rolno-Przemysłowych Zakładów Zielarskich „HERBAPOL”.
-                    Wpisane do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego w Poznaniu
-                    XXI Wydział Gospodarczy pod numerem 0000089425.
-                    Siedziba Spółki mieści się w Strykowie przy ul. Parkowej 7, gmina Stęszew, województwo
-                    wielkopolskie.</p>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <article class="fl_ctr">
+                <div>
+                    <h1>O nas</h1>
+                    <p>Rolno-Przemysłowe Zakłady Zielarskie „STRYKOWO” Sp. z o.o. powstały 01.07.1999r. z
+                        przekształcenia
+                        Rolno-Przemysłowych Zakładów Zielarskich „HERBAPOL”.
+                        Wpisane do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego w Poznaniu
+                        XXI Wydział Gospodarczy pod numerem 0000089425.
+                        Siedziba Spółki mieści się w Strykowie przy ul. Parkowej 7, gmina Stęszew, województwo
+                        wielkopolskie.</p>
+                </div>
+                <div>
+                    <img src="../pictures/john.jpg" alt="jdeere">
+                    <p class="center">Dbamy o modernizacje sprzętu dla ergonomii pracy</p>
+                </div>
             </article>
+
         </section>
         <footer>
-            <img src="../pictures/logo white.png" alt="logo">
+            <a href="./index.html"><img src="../pictures/logo white.png" alt="logo"></a>
             <div>
                 <h3>Nawigacja</h3>
                 <p><a href="./index.html">Strona Główna</a></p>
@@ -67,9 +105,15 @@
                 <p><a href="./contact.html">Kontakt</a></p>
                 <p><a href="./advertisment.html">Ogłoszenia</a></p>
             </div>
+            <div>
+                <p>BIP - Stęszew</p>
+                <a href="http://bip.steszew.pl/"><img src="../pictures/herb.png" alt="herb_steszew"></a>
+                <a href="http://bip.steszew.pl/">bip.steszew.pl</a>
+            </div>
         </footer>
     </main>
-    <script src="../js/navbar.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 
 </html>
