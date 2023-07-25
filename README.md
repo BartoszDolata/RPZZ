@@ -1,2 +1,2 @@
 # RPZZ
- website created for local firm
+ website created for local company
